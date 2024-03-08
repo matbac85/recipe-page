@@ -207,4 +207,8 @@ td {
   img {
     border-radius: 0.75rem;
   }
+
+  article {
+    padding: 2.5rem 0;
+  }
 }
