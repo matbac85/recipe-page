@@ -1,0 +1,210 @@
+/* CSS RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* MY CSS */
+
+:root {
+  --primary-500: hsl(14, 45%, 36%);
+  --primary-700: hsl(332, 51%, 32%);
+  --neutral-100: hsl(0, 0%, 100%);
+  --neutral-200: hsl(330, 100%, 98%);
+  --neutral-300: hsl(30, 54%, 90%);
+  --neutral-400: hsl(30, 18%, 87%);
+  --neutral-600: hsl(30, 10%, 34%);
+  --neutral-900: hsl(24, 5%, 18%);
+}
+
+body {
+  background-color: var(--neutral-300);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  background-color: white;
+  max-width: 46rem;
+}
+
+article {
+  padding: 2.5rem 2rem;
+  display: grid;
+  row-gap: 2rem;
+}
+
+section {
+  display: grid;
+  row-gap: 1.5rem;
+}
+
+hr {
+  background-color: var(--neutral-400);
+  height: 1px;
+  border: none;
+}
+
+h1 {
+  font-family: "Young Serif", serif;
+  font-size: clamp(2.25rem, 2.162rem + 0.3756vw, 2.5rem);
+  color: var(--neutral-900);
+  font-weight: 400;
+  line-height: 100%;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  color: var(--primary-500);
+  font-size: 1.75rem;
+}
+
+strong {
+  font-weight: 700;
+}
+
+p {
+  font-weight: 400;
+}
+
+p,
+strong {
+  color: var(--neutral-600);
+  font-family: "Outfit", sans-serif;
+  font-size: 1rem;
+  line-height: 150%;
+}
+
+ul,
+ol {
+  display: grid;
+  row-gap: 0.5rem;
+}
+
+.preparation {
+  background-color: var(--neutral-200);
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  row-gap: 0;
+}
+
+.preparation h2 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: var(--primary-700);
+  line-height: 100%;
+  margin-bottom: 1rem;
+}
+
+.preparation ul li::marker {
+  padding-left: 0.5rem;
+  color: var(--primary-500);
+}
+
+ol {
+  list-style-type: none;
+  padding-left: 0.5rem;
+}
+
+ol li {
+  counter-increment: my-counter;
+  display: flex;
+}
+
+ol li::before {
+  content: counter(my-counter) ".";
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  color: var(--primary-500);
+}
+
+ul p,
+ol p,
+ul {
+  padding-left: 1rem;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+tr:not(:last-child) {
+  border-bottom: 1px solid var(--neutral-400);
+}
+
+td,
+th {
+  font-family: "Outfit", sans-serif;
+  line-height: 150%;
+}
+
+th {
+  padding: 0.75rem 0 0.75rem 2rem;
+  font-weight: 400;
+  color: var(--neutral-600);
+  text-align: start;
+}
+
+td {
+  padding-right: 0.75rem 2rem 0.75rem 0;
+  font-weight: 700;
+  color: var(--primary-500);
+}
+
+@media only screen and (min-width: 48rem) {
+  main {
+    border-radius: 1.5rem;
+    padding: 2.5rem;
+    margin: 7.75rem 0;
+  }
+
+  img {
+    border-radius: 0.75rem;
+  }
+}
