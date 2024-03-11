@@ -142,8 +142,16 @@ ol {
   margin-bottom: 1rem;
 }
 
+section ul {
+  margin-left: 0.5rem;
+}
+
 .preparation ul li::marker {
-  padding-left: 0.5rem;
+  color: var(--primary-700);
+}
+
+section ul li::marker {
+  font-size: small;
   color: var(--primary-500);
 }
 
@@ -204,11 +212,11 @@ td {
     margin: 7.75rem 0;
   }
 
-  img {
-    border-radius: 0.75rem;
+  article {
+    padding: 2.5rem 0 0 0;
   }
 
-  article {
-    padding: 2.5rem 0;
+  img {
+    border-radius: 0.75rem;
   }
 }
