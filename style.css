@@ -151,7 +151,7 @@ section ul {
 }
 
 section ul li::marker {
-  font-size: small;
+  font-size: x-small;
   color: var(--primary-500);
 }
 
