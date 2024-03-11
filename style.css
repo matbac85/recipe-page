@@ -102,6 +102,7 @@ h2 {
   font-weight: 400;
   color: var(--primary-500);
   font-size: 1.75rem;
+  line-height: 100%;
 }
 
 strong {
@@ -138,7 +139,6 @@ ol {
   font-weight: 600;
   font-size: 1.25rem;
   color: var(--primary-700);
-  line-height: 100%;
   margin-bottom: 1rem;
 }
 
