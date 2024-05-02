@@ -1,5 +1,26 @@
-### Recipe Page
+# Recipe Page
 
-I've created this recipe page as part of another frontend challenge on Metor. You can view the live version of the page [here](https://matbac85.github.io/recipe-page/)
+![Design preview for the Recipe page coding challenge](./design/desktop-preview.jpg)
 
-Enjoy cooking! 🍽️
+## Overview
+
+This recipe page was developed as a solution to the Frontend Mentor challenge. The challenge was to create a recipe page that closely matches the provided design.
+
+## Features
+
+- Responsive layout for different screen sizes
+
+## Expected Behavior
+
+- The recipe page should closely match the design provided in the challenge.
+- Responsive design should ensure the page looks good on various screen sizes.
+
+## Technologies Used
+
+- HTML
+- CSS
+
+## Links
+
+- Solution URL: [Recipe Page Solution](https://matbac85.github.io/recipe-page/)
+- Frontend Mentor Profile: [Your Frontend Mentor Profile](https://www.frontendmentor.io/profile/matbac85)
